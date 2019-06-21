@@ -12,7 +12,10 @@ export class AppComponent {
 
   // @ViewChild('testField', { static: true}) inputVariable: ElementRef;
 
+  learning =  ['Angular', 'Typescript', 'CSS', 'Webpack'];
+
   @ViewChild('localRef', {static: true}) appLoginForm: NgForm;
+
 
   suggestUserName() {
     const suggestedName = 'Superuser';
@@ -29,7 +32,7 @@ export class AppComponent {
   // }
 
   onSubmit() {
-    console.log(this.appLoginForm.controls.nameField.valid)
+    console.log(this.appLoginForm)
   }
 
 }
